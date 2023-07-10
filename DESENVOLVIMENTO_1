@@ -1,0 +1,34 @@
+##############################################################################################################################################################################
+# Desenvolva um código que utilize as seguintes características de um veículo:
+# - Quantidade de rodas;
+# - Peso bruto em quilogramas;
+# - Quantidade de pessoas no veículo.
+# 
+# Com essas informações, o programa mostrará qual é a melhor categoria de habilitação para o veículo informado a partir das condições:
+# A: Veículos com duas ou três rodas;
+# B: Veículos com quatro rodas, que acomodam até oito pessoas e seu peso é de até 3500 kg;
+# C: Veículos com quatro rodas ou mais e com peso entre 3500 e 6000 kg;
+# D: Veículos com quatro rodas ou mais e que acomodam mais de oito pessoas;
+# E: Veículos com quatro rodas ou mais e com mais de 6000 kg.
+# 
+# Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+##############################################################################################################################################################################
+
+# INFORMAR QTD de RODAS (valor igualo ou maior que 2)
+QTD_RODAS = 8
+# INFORMAR PESO em KILOS
+PESO = 3500
+# INFORMAR QTD de PESSOAS
+QTD_PESSOAS = 9
+
+if (QTD_RODAS <= 3):
+  print("A melhor categoria de habilitação para o veículo informado é a 'A'")
+elif ((QTD_RODAS == 4) and (PESO <= 3500) and (QTD_PESSOAS <= 8)):
+  print("A melhor categoria de habilitação para o veículo informado é a 'B'")
+elif ((QTD_RODAS >= 4) and (PESO >= 3500 and PESO <= 6000) and (QTD_PESSOAS <= 8)):
+  print("A melhor categoria de habilitação para o veículo informado é a 'C'")
+elif ((QTD_RODAS >= 4) and (PESO >= 3500 and PESO <= 6000) and (QTD_PESSOAS > 8)):
+  print("A melhor categoria de habilitação para o veículo informado é a 'D'")
+else:
+  print("A melhor categoria de habilitação para o veículo informado é a 'E'") 
+  
