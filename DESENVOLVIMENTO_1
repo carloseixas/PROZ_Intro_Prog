@@ -15,11 +15,12 @@
 ##############################################################################################################################################################################
 
 # INFORMAR QTD de RODAS (valor igual ou maior que 2)
-QTD_RODAS = 8
-# INFORMAR PESO em KILOS
-PESO = 3500
+QTD_RODAS = int(input("INFORME a QTD de RODAS que o Veículo possui (igual ou maior que 2): "))
+# INFORMAR PESO em QUILOS
+PESO = int(input("INFORME o PESO do Veículo em quilos: "))
 # INFORMAR QTD de PESSOAS
-QTD_PESSOAS = 9
+QTD_PESSOAS = int(input("INFORME a QTD de PESSOAS do Veículo: "))
+
 
 if (QTD_RODAS <= 3):
   print("A melhor categoria de habilitação para o veículo informado é a 'A'")
